@@ -1,3 +1,6 @@
+//Daniel Mota
+//July 3rd
+//Card Game with OOP
 package cardGame;
 
 import java.io.File;
@@ -7,6 +10,7 @@ import java.util.Scanner;
 
 public class CardGame {
 
+	// Data structures to hold the deck of cards and the players hand
 	private static ArrayList<Card> deckOfCards = new ArrayList<Card>();
 	private static ArrayList<Card> playerCards = new ArrayList<Card>();
 
