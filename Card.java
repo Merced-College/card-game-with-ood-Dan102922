@@ -71,4 +71,13 @@ public class Card {
     public String toString() {
         return rank + " of " + suit + " (Value: " + value + ", Picture: " + picture + ")";
     }
+    
+    // equals method for comparing card suit and rank
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Card)) return false;
+        Card other = (Card) obj;
+        return this.suit.equals(other.suit) && this.rank.equals(other.rank);
+    }
 }
